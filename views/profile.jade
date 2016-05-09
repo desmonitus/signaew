@@ -1,0 +1,28 @@
+extends layout
+
+block content
+
+	script(src="/javascripts/view.profile.js")
+	.row
+		.col.s6.offset-s3
+			.card.large
+				.card-image
+					img(src="/img/profile_banner.jpg")
+				.card-content
+					form.col.s12
+						.col.s6.input-field
+							input.validate(
+											id="firstName"
+											type="text"
+											)
+							label(
+								 for="firstName"
+								 ) First Name
+						.col.s6.input-field
+							input.validate(
+											id="lastName"
+											type="text"
+											)
+							label(
+								 for="lastName"
+								 ) Last Name

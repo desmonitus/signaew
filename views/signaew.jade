@@ -1,0 +1,25 @@
+extends Slayout
+
+block content
+
+	script(src="/javascripts/view.signaew.js")
+	.row
+		.col.s6.offset-s3.center-align
+			.card( id="msgBox")
+				.card-image.waves-effect.waves-block.waves-light
+					img.activator(
+									id="imgTitle"
+									src="/img/pic2.jpg"
+								  )
+				.card-content
+					a.card-title.activator ----------------New Message----------------
+				.card-reveal
+					span.card-title.activator.grey-text.text-darken-4 Message
+						i.material-icons.right close
+					p.left-align.pink-text.text-lighten-3(id="paragraph") ความรักไม่ได้เกิดจากความบังเอิญ มันเกิดจากความสุขที่เราทั้งสองมีให้กัน
+					p.center-align.pink-text.text-lighten-2(id="paragraph") ความบังเอิญที่เราได้มาเจอกัน มันตื่นเต้นและหล่อหลอมกายเป็นความผูกพันธ์ที่แสนน่ารัก
+					p.right-align.pink-text.text-lighten-1(id="paragraph") ความน่ารักของความสุขที่เราสร้าง มันจะเติมเต็มทุกความต้องการอย่างที่ไม่เคยมีใครให้ได้
+					.row
+						.col.s6.offset-s3.center-align
+							img(src="/img/heart.png")
+			

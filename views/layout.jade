@@ -1,0 +1,38 @@
+doctype 5
+html
+  head
+    title Poont System
+    script(src="/js/jquery-1.12.3.min.js")
+    script(src="/materialize/js/bin/materialize.js")
+    
+    script(src="/js/mid.js")
+    link(rel='stylesheet', href='/materialize/css/materialize.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+  
+    
+  body
+    .navbar-fixed
+      nav
+        .nav-wrapper(class="#263238 blue-grey darken-4")
+          a.brand-logo.center( id="logoHeader" ) Poont System
+          ul.left.hide-on-med-and-down(
+                                      id="menu"
+                                       )
+            li(
+              id="profileHeader"
+              )
+              a Profile
+          ul.right.hide-on-med-and-down
+            li
+              a(
+                id="logout"
+                onClick="Logout()"
+                ) Logout
+    #header
+    #content
+      block content
+    #footer
+      // a(href="http://facebook.com") Desmonitus
+    script
+        onReady()

@@ -1,0 +1,42 @@
+extends layout
+
+block content
+
+  script(src="/javascripts/view.index.js")
+  .parallax-container
+    .parallax
+      img(src='/img/paralax.jpg')
+  .section.while(
+                id="section"
+                )
+    .row.container
+      h2.header.flow-text Desmonitus Dorora
+      .row
+        form.col.s12
+          .input-field.col.s6
+            i.material-icons.prefix lock
+            input.validate(
+                  id="username"
+                  type="text"
+                  )
+            label(
+                  for="username"
+                   style="font-size: 14px;"
+                  ) Username
+          .input-field.col.s6
+            input.validate(
+                  id="password"
+                  type="password"
+                  )
+            label(
+                  for="password"
+                   style="font-size: 14px;"
+                  ) Password
+          .col.s12.center-align
+            a.btn.waves-effect.waves-light.btn-large(
+                  id="submit"
+                  ) Login
+              i.material-icons.right send
+  .parallax-container
+    .parallax
+      img(src='/img/paralax.jpg')
